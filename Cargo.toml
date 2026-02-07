@@ -1,0 +1,12 @@
+[package]
+
+name = "rust-sample"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A simple Rust project with unit tests"
+license = "MIT"
+
+[dependencies]
+
+[dev-dependencies]

@@ -1,4 +1,4 @@
-use rust_sample::calculator;
+use crate::calculator;
 
 fn main() {
     println!("🦀 Welcome to Rust Sample Calculator!");

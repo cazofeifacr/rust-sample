@@ -1,4 +1,4 @@
-use crate::calculator;
+mod calculator;
 
 fn main() {
     println!("🦀 Welcome to Rust Sample Calculator!");

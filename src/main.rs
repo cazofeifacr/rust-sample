@@ -1,4 +1,4 @@
-mod calculator;
+use rust_sample::calculator;
 
 fn main() {
     println!("🦀 Welcome to Rust Sample Calculator!");

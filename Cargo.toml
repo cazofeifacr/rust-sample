@@ -1,5 +1,5 @@
 [package]
-name = "rust-cazofeifa-calc"
+name = "rust_sample"
 version = "0.1.0"
 edition = "2021"
 authors = ["cazofeifacr"]
@@ -23,7 +23,7 @@ exclude = [
 [dev-dependencies]
 
 [lib]
-name = "rust_sample_calculator"
+name = "rust_sample"
 path = "src/lib.rs"
 
 [[bin]]

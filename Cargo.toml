@@ -9,8 +9,8 @@ homepage = "https://github.com/cazofeifacr/rust-sample"
 repository = "https://github.com/cazofeifacr/rust-sample"
 readme = "README.md"
 license = "MIT"
-keywords = ["calculator", "math", "arithmetic", "sample"]
-categories = ["algorithms", "math"]
+keywords = ["calculator", "arithmetic", "sample"]
+categories = ["algorithms"]
 
 exclude = [
     ".github/*",

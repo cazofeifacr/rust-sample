@@ -29,12 +29,26 @@ fn main() {
 
 ## Install as a Binary (CLI)
 
-To run the calculator from the terminal:
+Install [Rust](https://www.rust-lang.org/tools/install) first. Then:
 
 ```bash
 cargo install rust_sample_calc_cazofeifa
+```
+
+If `rust-sample` is not found, add Cargo's bin to your PATH (zsh):
+
+```bash
+echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Run the calculator:
+
+```bash
 rust-sample
 ```
+
+Verify installation: `which cargo` and `which rust-sample` should show paths under `~/.cargo/bin/`.
 
 ## Quick Start (from source)
 1. Install [Rust](https://www.rust-lang.org/tools/install)

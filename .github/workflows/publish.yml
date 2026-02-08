@@ -3,7 +3,7 @@ name: Publish to crates.io
 on:
   push:
     tags:
-      - 'v*.*.*'  # Triggers on version tags like v0.1.0, v1.2.3, etc.
+      - 'v*.*.*'
 
 env:
   CARGO_TERM_COLOR: always
@@ -48,8 +48,18 @@ jobs:
 
     - name: Verify package
       run: cargo package --list
+    - name: Check crates.io for existing version
+      shell: bash
+      run: |
+        name=$(awk -F '"' '/^name =/ {print $2; exit}' Cargo.toml)
+        version=$(awk -F '"' '/^version =/ {print $2; exit}' Cargo.toml)
+        echo "Crate: $name, Version: $version"
+        if curl -s "https://crates.io/api/v1/crates/$name" | grep -q "\"num\":\"$version\""; then
+          echo "Version $version of $name already exists on crates.io — skipping publish."
+          exit 0
+        fi
 
     - name: Publish to crates.io
-      run: cargo publish --token ${{ secrets.CARGO_TOKEN }}
+      run: cargo publish
       env:
         CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_TOKEN }}

@@ -1,12 +1,31 @@
 [package]
-
-name = "rust-sample"
+name = "rust-cazofeifa-calc"
 version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["cazofeifacr"]
 description = "A simple Rust project with unit tests"
+documentation = "https://docs.rs/rust-sample-calculator"
+homepage = "https://github.com/cazofeifacr/rust-sample"
+repository = "https://github.com/cazofeifacr/rust-sample"
+readme = "README.md"
 license = "MIT"
+keywords = ["calculator", "math", "arithmetic", "sample"]
+categories = ["algorithms", "math"]
+
+exclude = [
+    ".github/*",
+    "*.tar.gz",
+    "Commands.md"
+]
 
 [dependencies]
 
 [dev-dependencies]
+
+[lib]
+name = "rust_sample_calculator"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rust-sample"
+path = "src/main.rs"

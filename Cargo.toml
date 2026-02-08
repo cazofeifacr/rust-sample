@@ -1,7 +1,7 @@
 [package]
 name = "rust_sample"
 version = "0.0.1"
-edition = "2026"
+edition = "2024"
 authors = ["cazofeifacr"]
 description = "A simple Rust project with unit tests"
 documentation = "https://docs.rs/rust-sample-calculator"

@@ -1,4 +1,4 @@
-use rust_sample::calculator;
+use rust_sample_calc_cazofeifa::calculator;
 
 fn main() {
     println!("🦀 Welcome to Rust Sample Calculator!");

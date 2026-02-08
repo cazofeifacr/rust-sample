@@ -4,7 +4,7 @@ pub mod calculator {
     ///
     /// # Examples
     /// ```
-    /// use rust_sample::calculator::add;
+    /// use rust_sample_calc_cazofeifa::calculator::add;
     /// assert_eq!(add(2, 3), 5);
     /// ```
     pub fn add(a: i32, b: i32) -> i32 {
